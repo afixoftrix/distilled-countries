@@ -1,0 +1,9 @@
+.container{
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
+  background: cornsilk;
+  padding: 20px;
+  border: 3px solid #ffeea87a;
+  border-radius: 10px;
+}
