@@ -38,3 +38,27 @@
 .italisize {
   font-style: italic;
 }
+/* special cases */
+.alignCenter {
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  .headingXl {
+    font-size: 1.5rem;
+    margin:0
+  }
+
+  .heading2Xl {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .headingMd {
+    font-size: 1rem;
+  }
+
+  .lightTxt {
+    font-size: 16px;
+  }
+}

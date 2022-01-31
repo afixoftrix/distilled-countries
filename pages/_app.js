@@ -39,9 +39,9 @@ function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"></link>
       </Head>
-      <div className={cn(layout.container, layout.main)}>
+      <div className={cn(layout.container)}>
         <Link href="/">
-          <h1 className={typo.heading2Xl}>Countries App</h1>
+          <h1 className={cn(typo.heading2Xl, typo.alignCenter)}>Countries App</h1>
         </Link>
         <Component history={history} {...pageProps} />
       </div>

@@ -7,6 +7,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   background: floralwhite;
   font-smooth: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 a {
