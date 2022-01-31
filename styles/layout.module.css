@@ -1,7 +1,9 @@
 .container {
   padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.main {
+.indexContainer {
   min-height: 100vh;
   padding: 20px;
   flex: 1;
@@ -9,6 +11,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.countryContainer{
+  min-height: 100vh;
+  padding: 20px;
 }
 .countryGrid {
   width: 100%;
@@ -18,14 +24,15 @@
   column-gap: 20px;
 }
 .flagImage {
-  width: 400px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto 40px;
 }
 .countryLink {
   display: block;
   width: 100%;
-}
-.spacingBottom {
-  margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 620px) {

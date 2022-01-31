@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image from "next/image";
 import PropTypes from "prop-types";
 import cn from "classnames";
 
 import styles from "./styles.module.css";
-import typo from "../../styles/typography.module.css"
+import typo from "../../styles/typography.module.css";
 import colors from "../../styles/colors.module.css";
 
 const CountryCards = ({ countryName, capital, population, flag }) => (
@@ -19,7 +19,9 @@ const CountryCards = ({ countryName, capital, population, flag }) => (
       </div>
       {/* <img className={styles.image} src={flag} alt={`${name}'s flag`} /> */}
       <div className={styles.nameAndCapital}>
-        <div className={cn(typo.headingXl, colors.countryName)}>{countryName}</div>
+        <div className={cn(typo.headingXl, colors.countryName)}>
+          {countryName}
+        </div>
         <div>
           <span className={cn(typo.headingMd, colors.txtColor)}>Capital: </span>
           <span className={cn(typo.lightTxt, colors.txtColor)}>{capital}</span>

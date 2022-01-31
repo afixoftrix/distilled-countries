@@ -1,6 +1,6 @@
 .image {
   width: 100%;
-  height: 80px;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -11,4 +11,14 @@
 .population {
   position: absolute;
   top: 4px;
+}
+
+@media only screen and (max-width: 620px) {
+  .population {
+    top: -1px;
+  }
+
+  .image {
+    height: 80%;
+  }
 }

@@ -1,7 +1,7 @@
-import cn from 'classnames';
+import cn from "classnames";
 
 import borderCardStyles from "./styles.module.css";
-import typo from '../../styles/typography.module.css'
+import typo from "../../styles/typography.module.css";
 
 //TODO: add prop-types
 const BorderCard = ({ name, flag, population }) => (
@@ -14,11 +14,17 @@ const BorderCard = ({ name, flag, population }) => (
       />
     </div>
     <div className={typo.headingMd}>{name}</div>
-    <div className={cn(typo.italisize, typo.lightTxtSm, borderCardStyles.popContainer)}>
-      <span class="material-icons">person_outline{" "}</span>
+    <div
+      className={cn(
+        typo.italisize,
+        typo.lightTxtSm,
+        borderCardStyles.popContainer
+      )}
+    >
+      <span class={cn(`material-icons`, typo.matIcon)}>person_outline </span>
       <span className={borderCardStyles.population}>{population}</span>
     </div>
   </div>
 );
 
-export default BorderCard
+export default BorderCard;

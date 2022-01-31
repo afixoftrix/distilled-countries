@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import Head from "next/head";
 import cn from "classnames";
 
 import layout from "../styles/layout.module.css";
 import typo from "../styles/typography.module.css";
 import "../styles/globals.css";
-import Link from "next/link";
 
 function MyApp({ Component, pageProps }) {
   const [history, setHistory] = useState([]);
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
           shallow ? "with" : "without"
         } shallow routing`
       );
-      setHistory(prevState => ([...prevState, url]));
+      setHistory((prevState) => [...prevState, url]);
     };
 
     router.events.on("routeChangeStart", handleRouteChange);
@@ -36,12 +36,16 @@ function MyApp({ Component, pageProps }) {
           content="app for countries -- a distilled assessment project -- Unwana Essien"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        ></link>
       </Head>
-      <div className={cn(layout.container)}>
+      <div className={layout.container}>
         <Link href="/">
-          <h1 className={cn(typo.heading2Xl, typo.alignCenter)}>Countries App</h1>
+          <h1 className={cn(typo.heading2Xl, typo.alignCenter, typo.clickable)}>
+            Countries App
+          </h1>
         </Link>
         <Component history={history} {...pageProps} />
       </div>

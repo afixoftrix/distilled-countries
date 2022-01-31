@@ -42,6 +42,12 @@
 .alignCenter {
   text-align: center;
 }
+.matIcon {
+  font-size: 22px;
+}
+.clickable {
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 620px) {
   .headingXl {
@@ -55,10 +61,17 @@
   }
 
   .headingMd {
-    font-size: 1rem;
+    font-size: 12px;
   }
 
   .lightTxt {
     font-size: 16px;
+  }
+
+  .lightTxtSm {
+    font-size: 12px;
+  }
+  .matIcon {
+    font-size: 12px;
   }
 }
