@@ -38,7 +38,7 @@ export default function Home() {
                 <Link href={`/${commonName}`} key={`${commonName}-${i}`}>
                   <a className={layout.countryLink}>
                     <CountryCards
-                      name={commonName}
+                      countryName={commonName}
                       capital={countryCap}
                       flag={flagSVG}
                       population={Number(population).toLocaleString()}

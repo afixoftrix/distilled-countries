@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import PropTypes from "prop-types";
 import cn from "classnames";
 
@@ -5,12 +6,20 @@ import styles from "./styles.module.css";
 import typo from "../../styles/typography.module.css"
 import colors from "../../styles/colors.module.css";
 
-const CountryCards = ({ name, capital, population, flag }) => (
+const CountryCards = ({ countryName, capital, population, flag }) => (
   <div className={styles.container}>
     <div className={styles.topCard}>
-      <img className={styles.image} src={flag} alt={`${name}'s flag`} />
+      <div className={styles.imageContainer}>
+        <Image
+          src={flag}
+          alt={`${countryName}'s flag`}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      {/* <img className={styles.image} src={flag} alt={`${name}'s flag`} /> */}
       <div className={styles.nameAndCapital}>
-        <div className={cn(typo.headingXl, colors.countryName)}>{name}</div>
+        <div className={cn(typo.headingXl, colors.countryName)}>{countryName}</div>
         <div>
           <span className={cn(typo.headingMd, colors.txtColor)}>Capital: </span>
           <span className={cn(typo.lightTxt, colors.txtColor)}>{capital}</span>
@@ -25,7 +34,7 @@ const CountryCards = ({ name, capital, population, flag }) => (
 );
 
 CountryCards.propTypes = {
-  name: PropTypes.string.isRequired,
+  countryName: PropTypes.string.isRequired,
   capital: PropTypes.string.isRequired,
   population: PropTypes.string.isRequired,
   flag: PropTypes.string.isRequired,
