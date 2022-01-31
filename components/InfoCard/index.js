@@ -1,4 +1,5 @@
 import cn from "classnames";
+import PropTypes from "prop-types";
 
 import infoStyles from "./styles.module.css";
 import typo from "../../styles/typography.module.css";
@@ -24,5 +25,13 @@ const InfoCard = ({ country, capital, pop, currency, langs }) => (
     </div>
   </div>
 );
+
+InfoCard.propTypes = {
+  country: PropTypes.string.isRequired,
+  capital: PropTypes.string.isRequired,
+  pop: PropTypes.number.isRequired,
+  currency: PropTypes.string.isRequired,
+  langs: PropTypes.string.isRequired,
+};
 
 export default InfoCard;

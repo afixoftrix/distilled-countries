@@ -1,19 +1,19 @@
+import PropTypes from "prop-types";
 import cn from "classnames";
 
 import borderCardStyles from "./styles.module.css";
 import typo from "../../styles/typography.module.css";
 
-//TODO: add prop-types
-const BorderCard = ({ name, flag, population }) => (
+const BorderCard = ({ countryName, flag, population }) => (
   <div className={borderCardStyles.container}>
     <div>
       <img
         className={borderCardStyles.image}
         src={flag}
-        alt={`${name}'s flag`}
+        alt={`${countryName}'s flag`}
       />
     </div>
-    <div className={typo.headingMd}>{name}</div>
+    <div className={typo.headingMd}>{countryName}</div>
     <div
       className={cn(
         typo.italisize,
@@ -27,4 +27,9 @@ const BorderCard = ({ name, flag, population }) => (
   </div>
 );
 
+BorderCard.propTypes = {
+  countryName: PropTypes.string.isRequired,
+  flag: PropTypes.string.isRequired,
+  population: PropTypes.number.isRequired,
+};
 export default BorderCard;

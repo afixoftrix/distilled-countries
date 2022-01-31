@@ -1,9 +1,11 @@
+import PropTypes from "prop-types";
+
 import Button from "../Button";
 import { useRouter } from "next/router";
 
 import nav from "./nav.module.css";
 
-const Navigation = ({ link, hasHistory }) => {
+const Navigation = ({ hasHistory }) => {
   const router = useRouter();
   console.log(hasHistory);
   return (
@@ -11,6 +13,10 @@ const Navigation = ({ link, hasHistory }) => {
       {hasHistory && <Button onClick={() => router.back()}>{"< "} Back</Button>}
     </div>
   );
+};
+
+Navigation.propTypes = {
+  hasHistory: PropTypes.bool.isRequired,
 };
 
 export default Navigation;
