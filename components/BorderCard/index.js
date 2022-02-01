@@ -21,15 +21,15 @@ const BorderCard = ({ countryName, flag, population }) => (
         borderCardStyles.popContainer
       )}
     >
-      <span class={cn(`material-icons`, typo.matIcon)}>person_outline </span>
+      <span className={cn(`material-icons`, typo.matIcon)}>person_outline </span>
       <span className={borderCardStyles.population}>{population}</span>
     </div>
   </div>
 );
 
 BorderCard.propTypes = {
-  countryName: PropTypes.string.isRequired,
+  countryName: PropTypes.string,
   flag: PropTypes.string.isRequired,
-  population: PropTypes.number.isRequired,
+  population: PropTypes.number,
 };
 export default BorderCard;

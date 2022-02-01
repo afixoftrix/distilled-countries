@@ -1,0 +1,172 @@
+{
+  "data":[
+    {
+      "name": {
+        "common": "Aruba",
+        "official": "Aruba",
+        "nativeName": {
+          "nld": {
+            "official": "Aruba",
+            "common": "Aruba"
+          },
+          "pap": {
+            "official": "Aruba",
+            "common": "Aruba"
+          }
+        }
+      },
+      "tld": [".aw"],
+      "cca2": "AW",
+      "ccn3": "533",
+      "cca3": "ABW",
+      "cioc": "ARU",
+      "independent": false,
+      "status": "officially-assigned",
+      "unMember": false,
+      "currencies": {
+        "AWG": {
+          "name": "Aruban florin",
+          "symbol": "ƒ"
+        }
+      },
+      "idd": {
+        "root": "+2",
+        "suffixes": ["97"]
+      },
+      "capital": ["Oranjestad"],
+      "altSpellings": ["AW"],
+      "region": "Americas",
+      "subregion": "Caribbean",
+      "languages": {
+        "nld": "Dutch",
+        "pap": "Papiamento"
+      },
+      "latlng": [12.5, -69.96666666],
+      "landlocked": false,
+      "area": 180,
+      "demonyms": {
+        "eng": {
+          "f": "Aruban",
+          "m": "Aruban"
+        },
+        "fra": {
+          "f": "Arubaise",
+          "m": "Arubais"
+        }
+      },
+      "flag": "🇦🇼",
+      "maps": {
+        "googleMaps": "https://goo.gl/maps/8hopbQqifHAgyZyg8",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/1231749"
+      },
+      "population": 106766,
+      "fifa": "ARU",
+      "car": {
+        "side": "right"
+      },
+      "timezones": ["UTC-04:00"],
+      "continents": ["North America"],
+      "flags": {
+        "png": "https://flagcdn.com/w320/aw.png",
+        "svg": "https://flagcdn.com/aw.svg"
+      },
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/aw.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/aw.svg"
+      },
+      "startOfWeek": "monday",
+      "capitalInfo": {
+        "latlng": [12.52, -70.03]
+      }
+    },
+    {
+      "name": {
+        "common": "Serbia",
+        "official": "Republic of Serbia",
+        "nativeName": {
+          "srp": {
+            "official": "Република Србија",
+            "common": "Србија"
+          }
+        }
+      },
+      "tld": [".rs", ".срб"],
+      "cca2": "RS",
+      "ccn3": "688",
+      "cca3": "SRB",
+      "cioc": "SRB",
+      "independent": true,
+      "status": "officially-assigned",
+      "unMember": true,
+      "currencies": {
+        "RSD": {
+          "name": "Serbian dinar",
+          "symbol": "дин."
+        }
+      },
+      "idd": {
+        "root": "+3",
+        "suffixes": ["81"]
+      },
+      "capital": ["Belgrade"],
+      "altSpellings": [
+        "RS",
+        "Srbija",
+        "Republic of Serbia",
+        "Република Србија",
+        "Republika Srbija"
+      ],
+      "region": "Europe",
+      "subregion": "Southeast Europe",
+      "languages": {
+        "srp": "Serbian"
+      },
+      "latlng": [44, 21],
+      "landlocked": true,
+      "borders": ["BIH", "BGR", "HRV", "HUN", "UNK", "MKD", "MNE", "ROU"],
+      "area": 88361,
+      "demonyms": {
+        "eng": {
+          "f": "Serbian",
+          "m": "Serbian"
+        },
+        "fra": {
+          "f": "Serbe",
+          "m": "Serbe"
+        }
+      },
+      "flag": "🇷🇸",
+      "maps": {
+        "googleMaps": "https://goo.gl/maps/2Aqof7aV2Naq8YEK8",
+        "openStreetMaps": "https://www.openstreetmap.org/relation/1741311"
+      },
+      "population": 6908224,
+      "gini": {
+        "2017": 36.2
+      },
+      "fifa": "SRB",
+      "car": {
+        "signs": ["SRB"],
+        "side": "right"
+      },
+      "timezones": ["UTC+01:00"],
+      "continents": ["Europe"],
+      "flags": {
+        "png": "https://flagcdn.com/w320/rs.png",
+        "svg": "https://flagcdn.com/rs.svg"
+      },
+      "coatOfArms": {
+        "png": "https://mainfacts.com/media/images/coats_of_arms/rs.png",
+        "svg": "https://mainfacts.com/media/images/coats_of_arms/rs.svg"
+      },
+      "startOfWeek": "monday",
+      "capitalInfo": {
+        "latlng": [44.83, 20.5]
+      },
+      "postalCode": {
+        "format": "######",
+        "regex": "^(\\d{6})$"
+      }
+    }
+  ]
+}

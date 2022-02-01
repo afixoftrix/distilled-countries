@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import CountryCards from "../components/CountryCard";
+import CountryCard from "../components/CountryCard";
 import countriesApi from "../countries-api";
 
 import layout from "../styles/layout.module.css";
@@ -37,8 +37,8 @@ export default function Home() {
 
             return (
               <Link href={`/${commonName}`} key={`${commonName}-${i}`}>
-                <a className={layout.countryLink}>
-                  <CountryCards
+                <a role="link" className={layout.countryLink}>
+                  <CountryCard
                     countryName={commonName}
                     capital={countryCap}
                     flag={flagSVG}

@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 import typo from "../../styles/typography.module.css";
 import colors from "../../styles/colors.module.css";
 
-const CountryCards = ({ countryName, capital, population, flag }) => (
+const CountryCard = ({ countryName, capital, population, flag }) => (
   <div className={styles.container}>
     <div className={styles.topCard}>
       <div className={styles.imageContainer}>
@@ -35,11 +35,11 @@ const CountryCards = ({ countryName, capital, population, flag }) => (
   </div>
 );
 
-CountryCards.propTypes = {
-  countryName: PropTypes.string.isRequired,
-  capital: PropTypes.string.isRequired,
-  population: PropTypes.string.isRequired,
+CountryCard.propTypes = {
+  countryName: PropTypes.string,
+  capital: PropTypes.string,
+  population: PropTypes.string,
   flag: PropTypes.string.isRequired,
 };
 
-export default CountryCards;
+export default CountryCard;

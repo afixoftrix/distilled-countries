@@ -27,11 +27,11 @@ const InfoCard = ({ country, capital, pop, currency, langs }) => (
 );
 
 InfoCard.propTypes = {
-  country: PropTypes.string.isRequired,
-  capital: PropTypes.string.isRequired,
-  pop: PropTypes.number.isRequired,
-  currency: PropTypes.string.isRequired,
-  langs: PropTypes.string.isRequired,
+  country: PropTypes.string,
+  capital: PropTypes.string,
+  pop: PropTypes.number,
+  currency: PropTypes.string,
+  langs: PropTypes.string,
 };
 
 export default InfoCard;

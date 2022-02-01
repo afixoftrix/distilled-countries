@@ -13,12 +13,11 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url, { shallow }) => {
-      console.log(
-        `App is changing to ${url} ${
-          shallow ? "with" : "without"
-        } shallow routing`
-      );
+    /**
+     * Here, Im creating a history list for the app to tell whether to show
+     * the back button or not. There might be a better way to do this. Please let me know if there is.
+     */
+    const handleRouteChange = (url) => {
       setHistory((prevState) => [...prevState, url]);
     };
 
@@ -27,6 +26,7 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeStart", handleRouteChange);
     };
   }, []);
+
   return (
     <>
       <Head>
