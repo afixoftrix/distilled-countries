@@ -24,15 +24,26 @@ npm test
 
 ## Project Explanation
 
-Improvements to this application can start from the 
+Countries app works by requesting countries data from an endpoint on load into clickable cards. On selection (click) of a country, the user is lead to a separate page which makes a separate request for the details of the clicked country. 
+
+As per design reqs, the app has two main pages --the homepage that lists countries, and a subpage for individual countries. Routing in the application is taken care of automatically by nextjs framework. 
+
+For styling, css module are used with unique names to allow easy identification of elements while 
+inspecting the app using developer tools in a browser (I find this very useful for debugging). CSS modules was chosen as the styler of choice since it is what Nextjs uses in their tutorial (and because I've never used it myself --a seasoned styled-components user). 
+
+The app relies on Nextjs's framework as well as some css choices to help SEO. For instance, the `Image` component provided by the framework is used instead of the regular html `img` tag. The components has optimization options that can further enhance page load besides its already included lazy-loading features. 
+
+It is also important to note that nexjs also implements code splitting strategies right out of the box so no need to use `Suspense`...
+
+Testing is done with the react-testing-library and Jest. Coverage provided  in this app is quite insignificant and useless at the moment.
 
 ## To-do's
 
-Updates:
-[] Implement a better loader and loading state 
-[] Add default flag image for when flag request fails
-[] More code coverage
+Current:
+- Implement a better loader and loading state 
+- Add default flag image for when flag request fails
+- Improved and better code coverage
 
-Features:
-[] Add map feature to show where location of country is.
-[] Sorting and search functionality
+Future Features:
+- Add map feature to show where location of country is.
+- Sorting and search functionality
