@@ -16,7 +16,7 @@ npm run dev
 
 Once done the app should be running on: [http://localhost:3000](http://localhost:3000).
 
-For testing, the app uses Jest and the React Testing Library. You can run tests on the application by the following: 
+For testing, open a new terminal and run tests on the application by the following: 
 
 ```bash
 npm test
