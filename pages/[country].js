@@ -122,7 +122,7 @@ const CountryInfo = ({ history = [] }) => {
                 <Link href={`/${commonName}`} key={`${commonName}-${i}`}>
                   <a className={layout.countryLink}>
                     <BorderCard
-                      name={commonName}
+                      countryName={commonName}
                       flag={flagSVG}
                       population={Number(population).toLocaleString()}
                     />
